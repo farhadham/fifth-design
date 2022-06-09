@@ -1,0 +1,47 @@
+$small: 720px;
+$medium: 1200px;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    position: relative;
+    margin: 0 auto;
+    position: absolute;
+    z-index: -90;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    // background-color: aqua;
+    @media screen and (max-width: $medium) {
+      width: 100%;
+    }
+
+    .col {
+      // background-color: bisque;
+      flex: 0 1 100%;
+      border: solid 1px #ffffff10;
+    }
+    .col1 {
+      border-right-style: none;
+      border-top-style: none;
+      border-bottom-style: none;
+    }
+    .col2 {
+      border-right-style: none;
+      border-top-style: none;
+      border-bottom-style: none;
+
+      @media screen and (max-width: $small) {
+        display: none;
+      }
+    }
+    .col3 {
+      border-top-style: none;
+      border-bottom-style: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$small: 720px;
+$medium: 1200px;
+
+h2 {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 90px;
+  line-height: 90px;
+  text-align: center;
+  font-weight: 500;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 50px;
+  left: 35px;
+  max-width: 560px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-right: 50px;
+
+  @media screen and (max-width: $small) {
+    font-size: 17px;
+  }
+}

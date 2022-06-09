@@ -1,0 +1,105 @@
+.wrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  right: 0;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    .colors {
+      width: 200px;
+      height: 100%;
+      right: 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      .colorContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .color {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(248, 248, 248);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    .gear {
+      font-size: 25px;
+      animation-duration: 3s;
+      animation-name: slidein;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes slidein {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+.lines {
+  text-align: center;
+}
+
+button {
+  margin-top: 15px;
+  width: 85px;
+  height: 23px;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  border: solid 1px #00000033;
+  background-color: #ffffff;
+
+  &:focus {
+    background-color: #00000022;
+  }
+  &:hover {
+    background-color: #00000044;
+  }
+}
