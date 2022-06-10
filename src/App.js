@@ -6,6 +6,7 @@ import Setting from "./components/Setting/Setting";
 import { colors } from "./utils/colors";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
+import Test from "./components/Test/Test";
 
 function App() {
   const [color, setColor] = useState(colors[0]);
@@ -23,11 +24,14 @@ function App() {
         y.set(event.pageY - 12.5);
       }}
     >
-      <Header color={color} lines={lines} />
       <MouseFollower x={x} y={y} color={color} linkHovered={linkHovered} />
       <Setting setColor={setColor} setLines={setLines} />
+
+      <Nav setLinkHovered={setLinkHovered} />
+
+      <Header color={color} lines={lines} />
+      <Test color={color} lines={lines} />
       <Footer setLinkHovered={setLinkHovered} />
-      <Nav />
     </div>
   );
 }
