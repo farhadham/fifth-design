@@ -1,14 +1,22 @@
 $small: 720px;
 $medium: 1200px;
 
-h2 {
-  color: rgb(255, 255, 255);
+.h2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+
+  text-align: center;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
   font-size: 90px;
   line-height: 90px;
-  text-align: center;
+
   font-weight: 500;
 }
 
