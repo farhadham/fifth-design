@@ -1,0 +1,74 @@
+$small: 720px;
+$medium: 1200px;
+
+.address {
+  bottom: 50px;
+  left: 50px;
+  position: fixed;
+
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+
+  .p {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #bbb;
+    line-height: 2;
+  }
+}
+
+.media {
+  bottom: 50px;
+  right: 50px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  @media screen and (max-width: $medium) {
+    gap: 15px;
+  }
+
+  @media screen and (max-width: $medium) {
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .p {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #bbb;
+    line-height: 2;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    @media screen and (max-width: $medium) {
+      display: none;
+    }
+  }
+
+  .rectangle {
+    width: 1px;
+    height: 50px;
+    background-color: white;
+
+    @media screen and (max-width: $medium) {
+      display: none;
+    }
+  }
+
+  .icon {
+    font-size: 20px;
+    color: #bbb;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

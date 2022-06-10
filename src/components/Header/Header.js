@@ -9,15 +9,55 @@ const Header = ({ color, lines }) => {
     <div className={styles.wrapper} id="header">
       <BackgroundImage />
       <Container lines={lines}>
-        <motion.div
-          className={styles.h2}
-          initial={{ width: "auto" }}
-          animate={{ width: "0%" }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-        >
-          <h2>I develope websites</h2>
-          <h2>farhad faraji</h2>
-        </motion.div>
+        <div className={styles.h2}>
+          <motion.h2
+            animate={{
+              y: [-100, 0, 0, 100],
+            }}
+            transition={{
+              duration: 2.5,
+              repeatType: "loop",
+              repeat: Infinity,
+              repeatDelay: 5,
+            }}
+          >
+            I develope <span style={{ color: color }}>websites</span>
+          </motion.h2>
+        </div>
+
+        <div className={styles.h2}>
+          <motion.h2
+            animate={{
+              y: [-100, 0, 0, 100],
+            }}
+            transition={{
+              duration: 2.5,
+              repeatType: "loop",
+              repeat: Infinity,
+              repeatDelay: 5,
+              delay: 2.5,
+            }}
+          >
+            I produce <span style={{ color: color }}>music</span>
+          </motion.h2>
+        </div>
+
+        <div className={styles.h2}>
+          <motion.h2
+            animate={{
+              y: [-100, 0, 0, 100],
+            }}
+            transition={{
+              duration: 2.5,
+              repeatType: "loop",
+              repeat: Infinity,
+              repeatDelay: 5,
+              delay: 5,
+            }}
+          >
+            I develope <span style={{ color: color }}>video-games</span>
+          </motion.h2>
+        </div>
 
         <h1>
           Hello, I’m <strong style={{ color: color }}>Farhad Faraji</strong>,

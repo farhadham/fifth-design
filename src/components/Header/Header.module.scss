@@ -7,17 +7,22 @@ $medium: 1200px;
   transform: translateY(-50%);
   white-space: nowrap;
   overflow: hidden;
-  width: auto;
-
   text-align: center;
 }
 
 h2 {
   color: rgb(255, 255, 255);
   font-size: 90px;
-  line-height: 90px;
-
+  line-height: 100px;
   font-weight: 500;
+
+  @media screen and (max-width: $medium) {
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: $small) {
+    font-size: 30px;
+  }
 }
 
 h1 {
@@ -33,5 +38,6 @@ h1 {
 
   @media screen and (max-width: $small) {
     font-size: 17px;
+    padding-right: 100px;
   }
 }

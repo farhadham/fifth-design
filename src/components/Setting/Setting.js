@@ -9,7 +9,6 @@ const Setting = ({ setColor, setLines }) => {
 
   const settingHandler = () => {
     SetSettingIsOn(!SettingIsOn);
-    console.log(SettingIsOn);
   };
 
   return (
