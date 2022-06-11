@@ -54,7 +54,7 @@ const Header = ({ color, lines }) => {
                 delay: 5,
               }}
             >
-              I develope <span style={{ color: color }}>video-games</span>
+              I develope <span style={{ color: color }}>games</span>
             </motion.h2>
           </div>
           <h1>

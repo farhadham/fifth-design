@@ -3,22 +3,25 @@ $medium: 1200px;
 .wrapper {
   height: 140px;
   position: fixed;
+  z-index: 50;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  // background-color: rgba(127, 255, 212, 0.123);
+  // background-color: #101010;
 
   .container {
     width: 95%;
     display: flex;
     justify-content: space-between;
-    // background-color: rgba(127, 255, 212, 0.397);
     height: 40px;
     overflow: hidden;
 
+    @media screen and (max-width: $medium) {
+      width: 90%;
+    }
+
     .a {
-      // background-color: rgba(127, 255, 212, 0.397);
       font-size: 16px;
       line-height: 2.5;
       font-family: "Roboto";
@@ -43,5 +46,34 @@ $medium: 1200px;
         }
       }
     }
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+  margin-top: 10px;
+  position: relative;
+  z-index: 61;
+
+  @media screen and (max-width: $medium) {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: white;
   }
 }

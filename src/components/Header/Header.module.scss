@@ -25,7 +25,11 @@ h2 {
   font-size: 90px;
   line-height: 100px;
   font-weight: 500;
-  background-color: rgba(0, 255, 255, 0.048);
+
+  @media screen and (max-width: 1322px) {
+    font-size: 80px;
+  }
+
   @media screen and (max-width: $medium) {
     font-size: 60px;
   }
@@ -49,5 +53,6 @@ h1 {
   @media screen and (max-width: $small) {
     font-size: 17px;
     padding-right: 100px;
+    padding-bottom: 10px;
   }
 }

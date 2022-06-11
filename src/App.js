@@ -6,7 +6,7 @@ import Setting from "./components/Setting/Setting";
 import { colors } from "./utils/colors";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
-import Test from "./components/Test/Test";
+import Resume from "./components/Resume/Resume";
 
 function App() {
   const [color, setColor] = useState(colors[0]);
@@ -26,11 +26,9 @@ function App() {
     >
       <MouseFollower x={x} y={y} color={color} linkHovered={linkHovered} />
       <Setting setColor={setColor} setLines={setLines} />
-
       <Nav setLinkHovered={setLinkHovered} />
-
       <Header color={color} lines={lines} />
-      <Test color={color} lines={lines} />
+      <Resume color={color} lines={lines} />
       <Footer setLinkHovered={setLinkHovered} />
     </div>
   );
