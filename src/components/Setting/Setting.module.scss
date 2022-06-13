@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 50;
+  z-index: 18;
   right: 0;
   height: 100vh;
   background-color: rgb(255, 255, 255);
@@ -60,6 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     color: black;
 

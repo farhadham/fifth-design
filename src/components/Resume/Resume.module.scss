@@ -3,10 +3,19 @@ $medium: 1200px;
 
 .wrapper {
   position: relative;
-  z-index: 40;
+  z-index: 5;
   background-color: #101010;
 
   .container {
+    position: relative;
+    @media screen and (max-width: $medium) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      align-content: center;
+    }
+
     .h2 {
       font-size: 24px;
       font-weight: 600;
@@ -14,12 +23,10 @@ $medium: 1200px;
       padding-top: 100px;
 
       @media screen and (max-width: $medium) {
-        padding-left: 80px;
       }
 
       @media screen and (max-width: $small) {
         padding-top: 40px;
-        padding-left: 30px;
       }
     }
 
@@ -99,10 +106,9 @@ $medium: 1200px;
             padding-top: 14px;
             color: white;
             font-size: 16px;
-            color: #4bffa5;
 
             .span {
-              color: #bbb;
+              color: #bbbbbb;
             }
           }
         }
@@ -114,10 +120,8 @@ $medium: 1200px;
     width: 200px;
     height: 40px;
     position: relative;
-    z-index: 23;
-    border: 2px solid #4bffa5;
+    z-index: 11;
     background: none;
-    color: #4bffa5;
     font-size: 16px;
     font-weight: 500;
     overflow: hidden;
@@ -130,15 +134,19 @@ $medium: 1200px;
       position: absolute;
       left: 0px;
       top: -80px;
-      z-index: -22;
-      background-color: #4bffa5;
+      z-index: 11;
     }
   }
   .total {
     border: solid 1px #ffffff10;
     background-color: #101010;
     position: relative;
-    z-index: 21;
+    z-index: 5;
     text-align: center;
+    align-self: center;
+
+    @media screen and (max-width: $medium) {
+      width: 90%;
+    }
   }
 }

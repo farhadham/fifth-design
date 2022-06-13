@@ -7,6 +7,7 @@ import { colors } from "./utils/colors";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import Resume from "./components/Resume/Resume";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
   const [color, setColor] = useState(colors[0]);
@@ -29,6 +30,7 @@ function App() {
       <Nav setLinkHovered={setLinkHovered} />
       <Header color={color} lines={lines} />
       <Resume color={color} lines={lines} />
+      <Portfolio color={color} lines={lines} />
       <Footer setLinkHovered={setLinkHovered} />
     </div>
   );

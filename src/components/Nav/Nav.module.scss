@@ -3,7 +3,7 @@ $medium: 1200px;
 .wrapper {
   height: 140px;
   position: fixed;
-  z-index: 50;
+  z-index: 20;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,7 @@ $medium: 1200px;
   display: none;
   margin-top: 10px;
   position: relative;
-  z-index: 61;
+  z-index: 20;
 
   @media screen and (max-width: $medium) {
     display: flex;

@@ -22,27 +22,28 @@ const Resume = ({ color, lines }) => {
                   about our unique.
                 </p>
                 <div className={styles.details}>
-                  <p className={styles.p}>
+                  <p className={styles.p} style={{ color }}>
                     Born <span className={styles.span}>1996</span>
                   </p>
-                  <p className={styles.p}>
+                  <p className={styles.p} style={{ color }}>
                     Residence <span className={styles.span}>Iran/Turkey</span>
                   </p>
-                  <p className={styles.p}>
+                  <p className={styles.p} style={{ color }}>
                     Email
-                    <span className={styles.span}>farhadham2@gmail.com </span>
+                    <span className={styles.span}> farhadham2@gmail.com </span>
                   </p>
-                  <p className={styles.p}>
+                  <p className={styles.p} style={{ color }}>
                     Phone
-                    <span className={styles.span}>+90 (543) 455 21 60</span>
+                    <span className={styles.span}> +90 (543) 455 21 60</span>
                   </p>
                 </div>
               </div>
             </div>
 
             <motion.button
+              style={{ border: `2px solid ${color}` }}
               className={styles.button}
-              animate={hovered ? { color: "#000000" } : { color: "#4bffa5" }}
+              animate={hovered ? { color: "#000000" } : { color: color }}
               initial={{ color: "#4bffa5" }}
               transition={{ duration: 0.35 }}
               onMouseEnter={() => {
@@ -54,6 +55,7 @@ const Resume = ({ color, lines }) => {
             >
               Download CV
               <motion.div
+                style={{ backgroundColor: color }}
                 className={styles.fake}
                 initial={{ scale: 0 }}
                 animate={hovered ? { scale: 1.1 } : { scale: 0 }}

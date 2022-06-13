@@ -1,11 +1,16 @@
 $small: 720px;
 $medium: 1200px;
 
+.a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .address {
   bottom: 50px;
   left: 50px;
   position: fixed;
-  z-index: 48;
+  z-index: 17;
 
   @media screen and (max-width: $medium) {
     display: none;
@@ -24,7 +29,7 @@ $medium: 1200px;
   bottom: 50px;
   right: 50px;
   position: fixed;
-  z-index: 48;
+  z-index: 17;
   display: flex;
   flex-direction: column;
   align-items: center;

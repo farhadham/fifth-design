@@ -11,7 +11,9 @@ const Footer = ({ setLinkHovered }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.address}>
-        <p className={styles.p}>E: farhadham2@gmail.com</p>
+        <a href="mailto:farhadham2@gmail.com" className={styles.a}>
+          <p className={styles.p}>E: farhadham2@gmail.com</p>
+        </a>
         <p className={styles.p}>T: +90 (543) 455 21 60</p>
       </div>
       <div className={styles.media}>
