@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Container from "../Container/Container";
-import styles from "./Resume.module.scss";
+import styles from "./About.module.scss";
 import { motion } from "framer-motion";
 
-const Resume = ({ color, lines }) => {
+const About = ({ color, lines }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -69,4 +69,4 @@ const Resume = ({ color, lines }) => {
   );
 };
 
-export default Resume;
+export default About;

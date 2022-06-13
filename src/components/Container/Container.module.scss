@@ -2,10 +2,9 @@ $small: 720px;
 $medium: 1200px;
 
 .wrapper {
+  display: flex;
+  justify-content: center;
   .container {
-    position: relative;
-    margin: 0 auto;
-    z-index: 5;
     width: 60%;
     @media screen and (max-width: $medium) {
       width: 100%;
@@ -14,10 +13,14 @@ $medium: 1200px;
     .lines {
       top: 0;
       position: absolute;
-      z-index: 4;
+      z-index: -5;
       display: flex;
+      width: 60%;
       height: 100%;
-      width: 100%;
+      @media screen and (max-width: $medium) {
+        width: 100%;
+      }
+
       .col {
         flex: 0 1 100%;
         border: solid 1px #ffffff10;
@@ -25,13 +28,7 @@ $medium: 1200px;
         border-bottom-style: none !important;
       }
 
-      // .col1 {
-      //   // border-right-style: none;
-      // }
-
       .col2 {
-        // border-right-style: none;
-
         @media screen and (max-width: $small) {
           display: none;
         }

@@ -6,8 +6,9 @@ import Setting from "./components/Setting/Setting";
 import { colors } from "./utils/colors";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
-import Resume from "./components/Resume/Resume";
+import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   const [color, setColor] = useState(colors[0]);
@@ -29,8 +30,9 @@ function App() {
       <Setting setColor={setColor} setLines={setLines} />
       <Nav setLinkHovered={setLinkHovered} />
       <Header color={color} lines={lines} />
-      <Resume color={color} lines={lines} />
-      <Portfolio color={color} lines={lines} />
+      <About color={color} lines={lines} />
+      <Experience color={color} lines={lines} />
+      <Portfolio color={color} lines={lines} setLinkHovered={setLinkHovered} />
       <Footer setLinkHovered={setLinkHovered} />
     </div>
   );

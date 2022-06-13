@@ -29,7 +29,16 @@ const MenuOverlay = ({ overlay, setOverlay }) => {
               setOverlay(false);
             }}
           >
-            About
+            Resume
+          </a>
+          <a
+            href="#portfolio"
+            className={styles.a}
+            onClick={() => {
+              setOverlay(false);
+            }}
+          >
+            Portfolio
           </a>
         </motion.div>
       )}

@@ -1,12 +1,9 @@
 $small: 720px;
 $medium: 1200px;
 
-.wrapper {
-}
 .container {
   width: 100%;
   height: 100vh;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,18 +38,23 @@ h2 {
 
 h1 {
   color: rgb(255, 255, 255);
-  position: absolute;
-  bottom: 50px;
-  left: 35px;
+  align-self: flex-end;
+  margin-right: auto;
   max-width: 560px;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
-  padding-right: 50px;
+  padding-left: 35px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: $medium) {
+    padding-left: 50px;
+  }
 
   @media screen and (max-width: $small) {
     font-size: 17px;
-    padding-right: 100px;
-    padding-bottom: 10px;
+    padding-right: 70px;
+    padding-left: 30px;
+    padding-bottom: 30px;
   }
 }

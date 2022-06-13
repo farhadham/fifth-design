@@ -18,7 +18,11 @@ $medium: 1200px;
     overflow: hidden;
 
     @media screen and (max-width: $medium) {
-      width: 90%;
+      width: 88%;
+    }
+
+    @media screen and (max-width: $small) {
+      width: 85%;
     }
 
     .a {
@@ -63,7 +67,7 @@ $medium: 1200px;
   display: none;
   margin-top: 10px;
   position: relative;
-  z-index: 20;
+  z-index: 30;
 
   @media screen and (max-width: $medium) {
     display: flex;

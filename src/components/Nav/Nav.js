@@ -38,7 +38,7 @@ const Nav = ({ setLinkHovered }) => {
           </a>
         </div>
         <div className={styles.links}>
-          <div className={styles.home}>
+          <div>
             <a
               href="#header"
               className={`${styles.a}`}
@@ -60,7 +60,7 @@ const Nav = ({ setLinkHovered }) => {
               </motion.div>
             </a>
           </div>
-          <div className={styles.about}>
+          <div>
             <a
               href="#resume"
               className={`${styles.a}`}
@@ -77,12 +77,12 @@ const Nav = ({ setLinkHovered }) => {
                 whileHover={{ y: -40, color: "#ffffff" }}
                 transition={{ duration: 0.3 }}
               >
-                <span className={styles.span}>About</span>
-                <span className={styles.span}>About</span>
+                <span className={styles.span}>Resume</span>
+                <span className={styles.span}>Resume</span>
               </motion.div>
             </a>
           </div>
-          <div className={styles.about}>
+          <div>
             <a
               href="#portfolio"
               className={`${styles.a}`}

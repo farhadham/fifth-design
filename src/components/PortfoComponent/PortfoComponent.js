@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import styles from "./PortfoComponent.module.scss";
 import { motion } from "framer-motion";
 
-const PortfoComponent = ({ description, title, image, color }) => {
+const PortfoComponent = ({ description, title, image, color, link }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className={styles.wrapper}>
+    <a
+      href={`https://${link}`}
+      className={styles.wrapper}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img
         className={styles.img}
         alt="farhadf.com"
@@ -37,7 +42,7 @@ const PortfoComponent = ({ description, title, image, color }) => {
         <p className={styles.title}>{title}</p>
         <p className={styles.desc}>{description}</p>
       </motion.div>
-    </div>
+    </a>
   );
 };
 

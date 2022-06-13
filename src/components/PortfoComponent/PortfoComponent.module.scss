@@ -11,6 +11,7 @@ $medium: 1200px;
   justify-content: center;
   align-items: center;
   aspect-ratio: 16/9;
+  text-decoration: none;
 
   @media screen and (max-width: $small) {
     width: 100%;

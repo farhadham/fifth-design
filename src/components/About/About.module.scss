@@ -3,11 +3,9 @@ $medium: 1200px;
 
 .wrapper {
   position: relative;
-  z-index: 5;
+  z-index: 10;
   background-color: #101010;
-
   .container {
-    position: relative;
     @media screen and (max-width: $medium) {
       display: flex;
       flex-direction: column;
@@ -23,10 +21,12 @@ $medium: 1200px;
       padding-top: 100px;
 
       @media screen and (max-width: $medium) {
+        padding-left: 80px;
       }
 
       @media screen and (max-width: $small) {
         padding-top: 40px;
+        padding-left: 40px;
       }
     }
 
@@ -119,29 +119,26 @@ $medium: 1200px;
     margin-bottom: 30px;
     width: 200px;
     height: 40px;
-    position: relative;
-    z-index: 11;
     background: none;
     font-size: 16px;
     font-weight: 500;
     overflow: hidden;
+    position: relative;
+    z-index: 12;
 
     .fake {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background-color: aliceblue;
       position: absolute;
       left: 0px;
       top: -80px;
-      z-index: 11;
+      z-index: -10;
     }
   }
   .total {
     border: solid 1px #ffffff10;
     background-color: #101010;
-    position: relative;
-    z-index: 5;
     text-align: center;
     align-self: center;
 

@@ -1,0 +1,68 @@
+$small: 720px;
+$medium: 1200px;
+
+.wrapper {
+  position: relative;
+  z-index: 10;
+  background-color: #101010;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .total {
+      width: 100%;
+      display: flex;
+      gap: 50px;
+
+      @media screen and (max-width: $medium) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: $small) {
+        flex-direction: column;
+        gap: 0px;
+      }
+
+      .experience {
+        width: 100%;
+      }
+      .education {
+        width: 100%;
+      }
+
+      .elements {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 70px;
+
+        .el {
+          color: white;
+          border: solid 1px #ffffff10;
+          padding: 35px;
+          background-color: #101010;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+.h2 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 40px;
+  padding-top: 100px;
+  @media screen and (max-width: $medium) {
+    padding-left: 30px;
+  }
+
+  @media screen and (max-width: $small) {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+}
