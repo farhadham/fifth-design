@@ -9,6 +9,8 @@ import Nav from "./components/Nav/Nav";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Experience from "./components/Experience/Experience";
+import Language from "./components/Language/Language";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const [color, setColor] = useState(colors[0]);
@@ -32,6 +34,8 @@ function App() {
       <Header color={color} lines={lines} />
       <About color={color} lines={lines} />
       <Experience color={color} lines={lines} />
+      <Skills color={color} lines={lines} />
+      <Language color={color} lines={lines} />
       <Portfolio color={color} lines={lines} setLinkHovered={setLinkHovered} />
       <Footer setLinkHovered={setLinkHovered} />
     </div>

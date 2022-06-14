@@ -46,6 +46,27 @@ $medium: 1200px;
           flex-direction: column;
           justify-content: space-between;
           gap: 5px;
+
+          .date {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 0 0 5px 0;
+          }
+
+          .title {
+            margin: 0 0 15px 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+          }
+
+          .desc {
+            font-size: 16px;
+            color: #bbb;
+            font-weight: 400;
+            line-height: 1.5;
+          }
         }
       }
     }
@@ -65,4 +86,8 @@ $medium: 1200px;
     padding-top: 40px;
     padding-left: 20px;
   }
+}
+
+.img {
+  margin-right: 5px;
 }

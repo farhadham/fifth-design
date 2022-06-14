@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "../Container/Container";
 import styles from "./About.module.scss";
-import { motion } from "framer-motion";
+import Button from "../Button/Button";
 
 const About = ({ color, lines }) => {
-  const [hovered, setHovered] = useState(false);
-
   return (
     <div className={styles.wrapper} id="resume">
       <Container lines={lines}>
@@ -13,7 +11,11 @@ const About = ({ color, lines }) => {
           <h2 className={styles.h2}>About</h2>
           <div className={styles.total}>
             <div className={styles.content}>
-              <img src="./images/Farhad-Faraji.jpg" className={styles.img} />
+              <img
+                src="./images/Farhad-Faraji.jpg"
+                className={styles.img}
+                alt="Farhad Faraji"
+              />
               <div className={styles.text}>
                 <p className={styles.aboutText}>
                   Hello! I’m Daniel Curry. Web designer from USA, California,
@@ -39,29 +41,7 @@ const About = ({ color, lines }) => {
                 </div>
               </div>
             </div>
-
-            <motion.button
-              style={{ border: `2px solid ${color}` }}
-              className={styles.button}
-              animate={hovered ? { color: "#000000" } : { color: color }}
-              initial={{ color: "#4bffa5" }}
-              transition={{ duration: 0.35 }}
-              onMouseEnter={() => {
-                setHovered(true);
-              }}
-              onMouseLeave={() => {
-                setHovered(false);
-              }}
-            >
-              Download CV
-              <motion.div
-                style={{ backgroundColor: color }}
-                className={styles.fake}
-                initial={{ scale: 0 }}
-                animate={hovered ? { scale: 1.1 } : { scale: 0 }}
-                transition={{ duration: 0.35 }}
-              ></motion.div>
-            </motion.button>
+            <Button color={color} text={"Download CV"} />
           </div>
         </div>
       </Container>
