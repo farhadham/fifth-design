@@ -18,10 +18,10 @@ const About = ({ color, lines }) => {
               />
               <div className={styles.text}>
                 <p className={styles.aboutText}>
-                  Hello! I’m Daniel Curry. Web designer from USA, California,
-                  San Francisco. I have rich experience in web site design and
-                  building, also I am good at wordpress. I love to talk with you
-                  about our unique.
+                  Hello! I'm Farhad Faraji. Web designer, Music Composer and
+                  Audio Engineer. I have rich experience in Music Production ;
+                  also, I just fell in love with programming and the Frontend
+                  The development will be my first milestone in this journey
                 </p>
                 <div className={styles.details}>
                   <p className={styles.p} style={{ color }}>

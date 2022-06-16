@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MenuOverlay.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
-const MenuOverlay = ({ overlay, setOverlay }) => {
+const MenuOverlay = ({ overlay, setOverlay, setBurgerOn }) => {
   return (
     <AnimatePresence>
       {overlay && (
@@ -18,6 +18,7 @@ const MenuOverlay = ({ overlay, setOverlay }) => {
             style={{ marginTop: "100px" }}
             onClick={() => {
               setOverlay(false);
+              setBurgerOn(false);
             }}
           >
             Home
@@ -27,6 +28,7 @@ const MenuOverlay = ({ overlay, setOverlay }) => {
             className={styles.a}
             onClick={() => {
               setOverlay(false);
+              setBurgerOn(false);
             }}
           >
             Resume
@@ -36,9 +38,20 @@ const MenuOverlay = ({ overlay, setOverlay }) => {
             className={styles.a}
             onClick={() => {
               setOverlay(false);
+              setBurgerOn(false);
             }}
           >
             Portfolio
+          </a>
+          <a
+            href="#contact"
+            className={styles.a}
+            onClick={() => {
+              setOverlay(false);
+              setBurgerOn(false);
+            }}
+          >
+            Contact
           </a>
         </motion.div>
       )}

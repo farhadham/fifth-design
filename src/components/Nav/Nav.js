@@ -1,15 +1,31 @@
 import React, { useState } from "react";
 import styles from "./Nav.module.scss";
-import { motion } from "framer-motion";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 import MenuOverlay from "../MenuOverlay/MenuOverlay";
 
 const Nav = ({ setLinkHovered }) => {
   const [burgerOn, setBurgerOn] = useState(false);
   const [overlay, setOverlay] = useState(false);
 
+  const { scrollYProgress } = useViewportScroll();
+  const height = useTransform(
+    scrollYProgress,
+    [0, 0.1, 1],
+    ["140px", "100px", "100px"]
+  );
+  const backgroundColor = useTransform(
+    scrollYProgress,
+    [0, 0.15, 1],
+    ["#10101000", "#101010ff", "#101010ff"]
+  );
+
   return (
-    <div className={styles.wrapper}>
-      <MenuOverlay overlay={overlay} setOverlay={setOverlay} />
+    <motion.div className={styles.wrapper} style={{ height, backgroundColor }}>
+      <MenuOverlay
+        overlay={overlay}
+        setOverlay={setOverlay}
+        setBurgerOn={setBurgerOn}
+      />
       <div className={styles.container}>
         <div>
           <a
@@ -104,6 +120,28 @@ const Nav = ({ setLinkHovered }) => {
               </motion.div>
             </a>
           </div>
+          <div>
+            <a
+              href="#contact"
+              className={`${styles.a}`}
+              onMouseEnter={() => {
+                setLinkHovered(true);
+              }}
+              onMouseLeave={() => {
+                setLinkHovered(false);
+              }}
+            >
+              <motion.div
+                className={styles.cont}
+                initial={{ y: 0 }}
+                whileHover={{ y: -40, color: "#ffffff" }}
+                transition={{ duration: 0.3 }}
+              >
+                <span className={styles.span}>Contact</span>
+                <span className={styles.span}>Contact</span>
+              </motion.div>
+            </a>
+          </div>
         </div>
         <div
           className={styles.hamburger}
@@ -129,7 +167,7 @@ const Nav = ({ setLinkHovered }) => {
           ></motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -97,15 +97,15 @@ const Portfolio = ({ color, lines, setLinkHovered }) => {
                 />
                 <PortfoComponent
                   image={"front-portfo-2"}
-                  title={"FarhadF.com"}
-                  description={"Personal Portfolio Website"}
+                  title={"Kitten Clubhouse"}
+                  description={"Kitten Clubhouse NFT Project"}
                   color={color}
                   link={"kittenhouseclub.onrender.com"}
                 />
                 <PortfoComponent
                   image={"front-portfo-3"}
-                  title={"FarhadF.com"}
-                  description={"Personal Portfolio Website"}
+                  title={"Don't Mint This"}
+                  description={"Don't Mint This NFT Project"}
                   color={color}
                   link={"dontmintthis.onrender.com"}
                 />
@@ -122,28 +122,39 @@ const Portfolio = ({ color, lines, setLinkHovered }) => {
                 transition={{ duration: 0.5 }}
               >
                 <PortfoComponent
-                  image={"portfo1"}
-                  title={"FarhadF.com"}
-                  description={"Personal Portfolio Website"}
+                  image={"music-portfo-1"}
+                  title={"NHL Stenden Christmas"}
+                  description={"A Short Film Composed by Me"}
                   color={color}
+                  link={"www.facebook.com/nhlstenden/videos/475244907279750/"}
                 />
                 <PortfoComponent
-                  image={"portfo1"}
-                  title={"FarhadF.com"}
-                  description={"Personal Portfolio Website"}
+                  image={"music-portfo-2"}
+                  title={"Eventopeople"}
+                  description={"EDM Music Composed for Trailer"}
                   color={color}
+                  link={"www.instagram.com/p/CW_P0o0KwTN/"}
                 />
                 <PortfoComponent
-                  image={"portfo1"}
-                  title={"FarhadF.com"}
-                  description={"Personal Portfolio Website"}
+                  image={"music-portfo-3"}
+                  title={"Rowing Club Bern"}
+                  description={"EDM Music Composed for Trailer"}
                   color={color}
+                  link={"www.instagram.com/p/CW_P0o0KwTN/"}
                 />
                 <PortfoComponent
-                  image={"portfo1"}
-                  title={"FarhadF.com"}
-                  description={"Personal Portfolio Website"}
+                  image={"music-portfo-4"}
+                  title={"Caveworld Crypto"}
+                  description={"Trailer Music Composed for NFT Project"}
                   color={color}
+                  link={"www.youtube.com/watch?v=GqBwmTAkXlQ"}
+                />
+                <PortfoComponent
+                  image={"music-portfo-5"}
+                  title={"Hypertonic Idle Farmyard"}
+                  description={"Music Composed for Farming Game"}
+                  color={color}
+                  link={"www.youtube.com/watch?v=_wHuTdgQmcU"}
                 />
               </motion.div>
             )}

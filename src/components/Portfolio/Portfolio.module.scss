@@ -61,6 +61,7 @@ $medium: 1200px;
 
 .total {
   min-height: 600px;
+  padding-bottom: 50px;
 
   @media screen and (max-width: $medium) {
     width: 90%;

@@ -19,33 +19,52 @@ const Footer = ({ setLinkHovered }) => {
       <div className={styles.media}>
         <p className={styles.p}>Follow Me</p>
         <div className={styles.rectangle}></div>
-        <AiFillLinkedin
-          className={styles.icon}
-          onMouseEnter={() => {
-            setLinkHovered(true);
-          }}
-          onMouseLeave={() => {
-            setLinkHovered(false);
-          }}
-        />
-        <AiFillYoutube
-          className={styles.icon}
-          onMouseEnter={() => {
-            setLinkHovered(true);
-          }}
-          onMouseLeave={() => {
-            setLinkHovered(false);
-          }}
-        />
-        <AiFillInstagram
-          className={styles.icon}
-          onMouseEnter={() => {
-            setLinkHovered(true);
-          }}
-          onMouseLeave={() => {
-            setLinkHovered(false);
-          }}
-        />
+        <a
+          href="https://www.linkedin.com/in/farhadfaraji/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillLinkedin
+            className={styles.icon}
+            onMouseEnter={() => {
+              setLinkHovered(true);
+            }}
+            onMouseLeave={() => {
+              setLinkHovered(false);
+            }}
+          />
+        </a>
+        <a
+          href="https://youtube.com/playlist?list=PLcnSVJu2jjrt58Z3nfD542WQJ0MKQ_Rks"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillYoutube
+            className={styles.icon}
+            onMouseEnter={() => {
+              setLinkHovered(true);
+            }}
+            onMouseLeave={() => {
+              setLinkHovered(false);
+            }}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/farsounds/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillInstagram
+            className={styles.icon}
+            onMouseEnter={() => {
+              setLinkHovered(true);
+            }}
+            onMouseLeave={() => {
+              setLinkHovered(false);
+            }}
+          />
+        </a>
+
         <AiFillTwitterSquare
           className={styles.icon}
           onMouseEnter={() => {

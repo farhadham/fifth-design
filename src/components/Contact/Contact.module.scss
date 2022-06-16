@@ -1,0 +1,76 @@
+$small: 720px;
+$medium: 1200px;
+
+.wrapper {
+  position: relative;
+  z-index: 10;
+  background-color: #101010;
+  .container {
+    @media screen and (max-width: $medium) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .h2 {
+      font-size: 24px;
+      font-weight: 600;
+      padding-left: 40px;
+      padding-top: 100px;
+
+      @media screen and (max-width: $medium) {
+        padding-left: 80px;
+      }
+
+      @media screen and (max-width: $small) {
+        padding-top: 40px;
+        padding-left: 40px;
+      }
+    }
+  }
+
+  .total {
+    border: solid 1px #ffffff10;
+    background-color: #101010;
+    align-self: center;
+    padding: 35px;
+
+    gap: 40px;
+
+    margin-bottom: 200px;
+
+    @media screen and (max-width: $medium) {
+      width: 90%;
+    }
+  }
+}
+
+.name,
+.email {
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  color: #eee;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  background: 0 0 !important;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  resize: none;
+  outline: 0;
+}
+
+.textarea {
+  font-family: Roboto;
+  font-size: 16px;
+  width: 100%;
+  color: #eee;
+  margin-bottom: 30px;
+  background: 0 0 !important;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  resize: none;
+  outline: 0;
+}
