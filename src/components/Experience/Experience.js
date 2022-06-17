@@ -76,7 +76,7 @@ const Experience = ({ color, lines }) => {
                       rel="noopener noreferrer"
                     >
                       <img
-                        src="./images/sololearn-JS.png"
+                        src="./images/sololearn-js.png"
                         width={"70px"}
                         alt="Sololearn JavaScript"
                         className={styles.img}
