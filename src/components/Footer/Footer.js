@@ -64,16 +64,6 @@ const Footer = ({ setLinkHovered }) => {
             }}
           />
         </a>
-
-        <AiFillTwitterSquare
-          className={styles.icon}
-          onMouseEnter={() => {
-            setLinkHovered(true);
-          }}
-          onMouseLeave={() => {
-            setLinkHovered(false);
-          }}
-        />
       </div>
     </div>
   );
