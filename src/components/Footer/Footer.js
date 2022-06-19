@@ -1,11 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
-import {
-  AiFillLinkedin,
-  AiFillYoutube,
-  AiFillInstagram,
-  AiFillTwitterSquare,
-} from "react-icons/ai";
+import { AiFillLinkedin, AiFillYoutube, AiFillInstagram } from "react-icons/ai";
 
 const Footer = ({ setLinkHovered }) => {
   return (

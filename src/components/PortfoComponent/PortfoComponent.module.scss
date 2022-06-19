@@ -41,6 +41,7 @@ $medium: 1200px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-align: center;
 
     .title {
       font-size: 14px;
@@ -53,6 +54,10 @@ $medium: 1200px;
       font-size: 24px;
       color: #101010;
       font-weight: 600;
+
+      @media screen and (max-width: $medium) {
+        font-size: 18px;
+      }
     }
   }
 }

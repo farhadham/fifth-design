@@ -158,6 +158,25 @@ const Portfolio = ({ color, lines, setLinkHovered }) => {
                 />
               </motion.div>
             )}
+
+            {pageNumber === 3 && (
+              <motion.div
+                className={styles.subCategory}
+                initial={{ scale: 0 }}
+                animate={{
+                  scale: 1,
+                }}
+                transition={{ duration: 0.5 }}
+              >
+                <PortfoComponent
+                  image={"back-portfo-1"}
+                  title={"Multiplayer Shooting Game"}
+                  description={"A Minigame based on JavaScript and Socket.io"}
+                  color={color}
+                  link={"multiplayer-shooting-game-js.herokuapp.com"}
+                />
+              </motion.div>
+            )}
           </div>
         </div>
       </Container>
