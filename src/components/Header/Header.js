@@ -69,7 +69,7 @@ const Header = ({ color, lines }) => {
                     duration: 1,
                   }}
                 >
-                  I develope <span style={{ color: color }}>websites</span>
+                  I develop <span style={{ color: color }}>websites</span>
                 </motion.h2>
               )}
             </AnimatePresence>
