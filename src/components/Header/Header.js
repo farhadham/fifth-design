@@ -87,7 +87,7 @@ const Header = ({ color, lines }) => {
                     duration: 1,
                   }}
                 >
-                  I produce <span style={{ color: color }}>music</span>
+                  I create <span style={{ color: color }}>music</span>
                 </motion.h2>
               )}
             </AnimatePresence>
@@ -105,27 +105,12 @@ const Header = ({ color, lines }) => {
                     duration: 1,
                   }}
                 >
-                  I develop <span style={{ color: color }}>games</span>
+                  I love <span style={{ color: color }}>games</span>
                 </motion.h2>
               )}
             </AnimatePresence>
           </div>
-          {/* <div className={styles.h2}>
-            <motion.h2
-              animate={{
-                y: [-100, 0, 0, 100],
-              }}
-              transition={{
-                duration: 2.5,
-                repeatType: "reverse",
-                repeat: Infinity,
-                repeatDelay: 5,
-                delay: 5,
-              }}
-            >
-              I develope <span style={{ color: color }}>games</span>
-            </motion.h2>
-          </div> */}
+
           <h1>
             Hello, I’m <strong style={{ color: color }}>Farhad Faraji</strong>,
             Web Developer, Game Designer,

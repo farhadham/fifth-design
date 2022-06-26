@@ -19,9 +19,10 @@ const About = ({ color, lines }) => {
               <div className={styles.text}>
                 <p className={styles.aboutText}>
                   Hello! I'm Farhad Faraji. Web designer, Music Composer and
-                  Audio Engineer. I have rich experience in Music Production ;
-                  also, I just fell in love with programming and the Frontend
-                  The development will be my first milestone in this journey
+                  Audio Engineer. I have rich experience in Music Production;
+                  also, I have a passion for programming and while I am already
+                  skilled at Frontend development, I am always looking to learn
+                  and improve.
                 </p>
                 <div className={styles.details}>
                   <p className={styles.p} style={{ color }}>
@@ -41,7 +42,9 @@ const About = ({ color, lines }) => {
                 </div>
               </div>
             </div>
-            <Button color={color} text={"Download CV"} />
+            <a href="https://farhadf.com/cv.pdf">
+              <Button color={color} text={"Download CV"} />
+            </a>
           </div>
         </div>
       </Container>

@@ -43,8 +43,8 @@ const Experience = ({ color, lines }) => {
                     Bachelor's Degree - Civil Engineering
                   </p>
                   <p className={styles.desc}>
-                    I have graduated from one of the top 5 universities in my
-                    country with a score of 16 from 20.
+                    I have graduated with a degree in Civil Engineering from
+                    University of Tabriz, one of the top universities in Iran
                   </p>
                 </div>
                 <div className={styles.el}>
